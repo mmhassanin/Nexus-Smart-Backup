@@ -1,0 +1,32 @@
+{
+  "name": "nexus-prime-backup-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.nexus.smartbackup",
+    "productName": "Nexus Smart Backup",
+    "win": {
+      "target": "portable"
+    },
+    "directories": {
+      "output": "dist-build"
+    }
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "fs-extra": "^11.3.3"
+  },
+  "devDependencies": {
+    "electron": "^40.4.1",
+    "electron-builder": "^26.7.0"
+  }
+}
